@@ -142,7 +142,6 @@ figcaption {
     text-align: center;
     padding: 1.5vh 0;
 }
-
 h1 {
     font-size: 3.8em;
     padding: 3vh 0;
@@ -317,6 +316,10 @@ p {
 i {
     font-size: 2em;
     padding: 2vh 0.2em 0 0.2em;
+}
+
+.work-item {
+    padding: 4vh 2em;
 }
 
 @media (min-width: 893px) {
