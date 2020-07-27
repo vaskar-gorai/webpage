@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="main.css" media="all">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="javascript.js"></script>
+	<title>Vaskar Gorai</title>
+</head>
+<body class="container">
+
+	<header class="primary-header group">
+		<img src="images\photo.jpg" alt="Self Photo" class="photo">
+		<nav class="navigation">
+			<ul>
+				<li><h2><a href="index.html">Home</a></h2></li><!--
+				--><li><h2><a href="about.html">About</a></h2></li><!--
+				--><li><h2><a href="skills.html">Skills</a></h2></li><!--
+				--><li><h2><a href="gallery.html">Gallery</a></h2></li>
+			</ul>
+		</nav>
+
+		<section class="dropdown">
+			<button onclick="onDropdown()" class="dropbtn">&#10148;</button>
+			<section class="dropdown-content" id="dropdownMenu">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="skills.html">Skills</a>
+				<a href="gallery.html">Gallery</a>
+			</section>
+		</section>
+	</header>
+
+	<section class="gallery">
+		<section class="buttons">
+			<button class="filter-button" data-filter="iitbombay" id="firstselected">IIT Bombay</button>
+			<button class="filter-button" data-filter="places">Places Visited</button>
+			<button class="filter-button" data-filter="friends">Friends</button>
+		</section>
+
+		<section class="flex gallery-item iitbombay">
+			<section class="col-4">
+				<figure>
+					<img src="images/img14.jpg">
+					<figcaption>Aerial View of IITB from Sameer Hill</figcaption>
+				</figure>
+				<figure>
+					<img src="images/img24.jpg" >
+					<figcaption>Gymkhana ground during the evening</figcaption>
+				</figure>
+			</section>
+			<section class="col-4">
+				<figure>
+					<img src="images/img26.jpg">
+					<figcaption>Sunset from IITB pipeline area</figcaption>
+				</figure>
+				<figure>
+					<img src="images/img29.jpg">
+					<figcaption>Lecture hall</figcaption>
+				</figure>
+			</section>
+			<section class="col-4">
+				<figure>
+					<img src="images/img27.jpg">
+					<figcaption>Main Building</figcaption>
+				</figure>
+				<figure>
+					<img src="images/img17.jpg">
+					<figcaption>Powai Lake view from Hostel 18</figcaption>
+				</figure>
+			</section>
+			<section  class="col-4">
+				<figure>
+					<img src="images/img30.jpg" alt="Pune">
+					<figcaption>Aerial View of new OAT</figcaption>
+				</figure>
+				<figure>
+					<img src="images/img31.jpeg" alt="Pune">
+					<figcaption>Old OAT</figcaption>
+				</figure>
+			</section>
+		</section>
+
+		<section class="flex gallery-item places">
+			<section class="col-4">
+				<figure>
+					<img src="images/img1.jfif">
+					<figcaption>On the way to elephanta caves</figcaption>
+				</figure>
+				<figure>
+					<img src="images/img22.jpg">
+					<figcaption>Gateway of India</figcaption>
+				</figure>
+			</section>
+			<section class="col-4">
+				<figure>
+					<img src="images/img19.jpg">
+					<figcaption>Rajmachi Fort</figcaption>
+				</figure>
+				<figure>
+					<img src="images/img35.jpg">
+					<figcaption>Night view of CSMT</figcaption>
+				</figure>
+			</section>
+			<section class="col-4">
+				<figure>
+					<img src="images/img32.jpg">
+					<figcaption>At the top of Rajmachi Fort</figcaption>
+				</figure>
+				<figure>
+					<img src="images/img33.jpg">
+					<figcaption>Juhu Beach</figcaption>
+				</figure>
+			</section>
+			<section  class="col-4">
+				<figure>
+					<img src="images/img25.jpg">
+					<figcaption>At Pune</figcaption>
+				</figure>
+				<figure>
+					<img src="images/img2.jpg">
+					<figcaption>At Marine Drive</figcaption>
+				</figure>
+			</section>
+		</section>
+
+		<section class="flex gallery-item friends">
+			<section class="col-4">
+				<figure>
+					<img src="images/img3.jpg">
+					<figcaption>Dakshanites IITB</figcaption>
+				</figure>
+				<figure>
+					<img src="images/img4.jpg" >
+					<figcaption>Holi at IITB</figcaption>
+				</figure>
+				<figure>
+					<img src="images/img11.jpg" >
+					<figcaption>Mumbai Metro Journey</figcaption>
+				</figure>
+			</section>
+			<section class="col-4">
+				<figure>
+					<img src="images/img5.jpg">
+					<figcaption>Chilling outside Hostel 16</figcaption>
+				</figure>
+				<figure>
+					<img src="images/img6.jpg">
+					<figcaption>Hostel 16 Fest</figcaption>
+				</figure>
+				<figure>
+					<img src="images/img13.jpeg" >
+					<figcaption>At Gateway of India</figcaption>
+				</figure>
+			</section>
+			<section class="col-4">
+				<figure>
+					<img src="images/img10.jpg">
+					<figcaption>Birthday Celebration</figcaption>
+				</figure>
+				<figure>
+					<img src="images/img12.jpg">
+					<figcaption>At Elephanta Caves</figcaption>
+				</figure>
+				<figure>
+					<img src="images/img15.jpg" >
+					<figcaption>Old OAT timepass</figcaption>
+				</figure>
+			</section>
+			<section  class="col-4">
+				<figure>
+					<img src="images/img7.jpg">
+					<figcaption>Pune Reunion</figcaption>
+				</figure>
+				<figure>
+					<img src="images/img23.jpg">
+					<figcaption>Night Cycling</figcaption>
+				</figure>
+				<figure>
+					<img src="images/img16.jpg" >
+					<figcaption>IIT Kharagpur Visit</figcaption>
+				</figure>
+			</section>
+		</section>
+	</section>
+</body>
+</html>

@@ -1,0 +1,389 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    clear: both;
+    *zoom: 1;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: rgba(100, 165, 165);
+    background-image: url('images/gallery-background.jpg');
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+}
+
+.flex{
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    min-height: 100%;
+    height: 75vh;
+}
+
+.col-2{
+    width: 50%;
+    display: block;
+    box-shadow: 0 0 0.12em 0.12em rgba(12, 114, 139, 0.4) inset;
+}
+
+.col-4 {
+    -ms-flex: 25%;
+        flex: 25%;
+    max-width: 25%;
+    padding: 2vh 0.3em;
+}
+
+.buttons {
+    text-align: center;
+}
+
+button {
+	width: 110px;
+	margin: 3vh 0.3em;
+	height: 40px;
+	background-color: rgb(43, 164, 124);
+	border: 0.15em solid rgb(50, 123, 103);
+	border-radius: 0.5em;
+	box-shadow: 0 0 0.1em 0 rgb(50, 123, 103);
+}
+
+button:hover {
+	border: 0.22em solid rgb(50, 123, 103);
+	background-color: rgb(73, 194, 154);
+}
+
+figure {
+    border: 0.1em solid black;
+    border-radius: 1em;
+    margin: 2vh 0;
+    box-shadow: 0.05em 0.05em 0.1em 0.01em black;
+}
+
+figure img {
+    vertical-align: middle;
+    width: 100%;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+}
+
+figcaption {
+	font-family: 'Dancing Script', cursive;
+	font-weight: 700;
+    text-align: center;
+    padding: 1.5vh 0;
+}
+
+h1 {
+    font-size: 3.8em;
+    padding: 3vh 0;
+}
+
+h2 {
+    font-size: 1.3em;
+    padding: 2vh 0;
+}
+
+h3 {
+    font-size: 1.2em;
+    padding: 2vh 0;
+}
+
+p {
+    padding: 1vh 0;
+    font-weight: 300;
+    line-height: 1.3em;
+    letter-spacing: 0.05em;
+}
+
+.photo {
+    float: left;
+    max-width: 100%;
+    margin-right: 10%;
+    border: 2px solid rgb(175, 175, 120);
+    border-radius: 50%;
+}
+
+.primary-header {
+    padding: 2vh 3em;
+    background-image: url('images/header.jpg');
+    min-height: 100%;
+    height: 25vh;
+}
+
+.navigation ul {
+    text-align: right;
+    padding: 4vh 0;
+}
+
+.navigation li {
+    display: inline-block;
+    margin-bottom: 2vh;
+    margin-right: 1em;
+}
+
+.navigation a {
+    color: rgb(175, 175, 120);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: rgb(78, 163, 177);
+}
+
+.dropbtn {
+    -webkit-transform: rotate(90deg);
+       -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+         -o-transform: rotate(90deg);
+            transform: rotate(90deg);
+    width: 2.5em;
+    height: 2.5em;
+    border: 1px solid black;
+    background-color: #3498DB;
+    border-radius: 0.3em;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #2980B9
+}
+
+.dropdown {
+    float: right;
+    padding-right: 1em;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: rgb(50, 203, 134);
+    background-color: rgba(50, 203, 134, 0.8);
+    position: absolute;
+    right: 0;
+    width: 10em;
+    padding: 1em 1.5em;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-top: 0.7em;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.show {
+    display: block;
+}
+
+.quirky {
+    background-image: url('images/quirky.jpg');
+    background-position: 50% 40%;
+    padding-top: 5vh;
+    text-align: center;
+}
+
+.quirky h3 {
+    font-weight: 600;
+}
+
+.intro {
+    background-image: url('images/intro.jpg');
+    background-position: 50% 40%;
+    background-size: cover;
+    padding-top: 7vh;
+    padding-right: 3em;
+    padding-left: 3em;
+}
+
+.conversation {
+    font-weight: 400;
+}
+
+.special {
+    display: inline-block;
+    box-shadow: 0 0.23em 0.1em -0.1em green;
+}
+
+.special a{
+    text-decoration: none;
+    color: black;
+}
+
+.special a:hover {
+    color: blue;
+}
+
+.short-intro,
+.long-intro {
+    padding: 5vh 3em 0 3em;
+}
+
+.short-intro {
+    background-image: url("images/short-intro.jpg");
+    background-position: 100% 1%;
+    background-size: cover;
+}
+
+.short-intro h3 {
+    font-size: 1.3em;
+    padding-bottom: 5vh;
+}
+
+.short-intro p {
+    font-size: 1.2em;
+}
+
+.long-intro {
+    background-image: url("images/long-intro.jpg");
+    background-position: 40% 40%;
+    background-size: cover;
+}
+
+i {
+    font-size: 2em;
+    padding: 2vh 0.2em 0 0.2em;
+}
+
+@media (min-width: 893px) {
+
+    .dropdown {
+        display: none;
+    }
+
+    .photo {
+        width: 10%;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 893px) {
+
+    .dropdown {
+        display: none;
+    }
+
+    .navigation ul {
+        padding-top: 1em;
+    }
+
+    .col-2 {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .col-4 {
+        -ms-flex: 33%;
+            flex: 33%;
+        max-width: 33%;
+    }
+
+    .photo {
+        width: 15%;
+    }
+}
+
+@media (max-width: 640px) {
+    
+    .navigation {
+        display: none;
+    }
+
+    .dropdown {
+        padding-top: 4vh;
+    }
+
+    .col-2 {
+        width: 100%;
+        height: 135%;
+    }
+
+    .col-4 {
+        -ms-flex: 50%;
+            flex: 50%;
+        max-width: 50%;
+    }
+
+    .photo {
+        width: 20%;
+    }
+}
+
+@media (max-height: 500px) {
+    .photo {
+        height: 90%;
+    }
+}
