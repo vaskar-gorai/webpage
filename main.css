@@ -319,6 +319,18 @@ i {
     padding: 2vh 0.2em 0 0.2em;
 }
 
+.fa-linkedin {
+	color: blue;
+}
+
+.fa-envelope {
+	color: rgb(30, 100, 180);
+}
+
+.fa-instagram {
+	color: red;
+}
+
 .work-item {
     padding: 4vh 2em;
 }
