@@ -166,7 +166,8 @@ p {
 
 .photo {
     float: left;
-    max-width: 100%;
+    min-width: 100px;
+    max-width: 120px;
     margin-right: 10%;
     border: 2px solid rgb(175, 175, 120);
     border-radius: 50%;
@@ -375,13 +376,13 @@ i {
     }
 
     .col-4 {
-        -ms-flex: 50%;
-            flex: 50%;
-        max-width: 50%;
+        -ms-flex: 100%;
+            flex: 100%;
+        max-width: 100%;
     }
 
     .photo {
-        width: 20%;
+        width: 15%;
     }
 }
 
